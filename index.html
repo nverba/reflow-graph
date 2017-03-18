@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>SystemJS</title>
+  <meta name="description" content="SystemJS starter app">
+  <meta name="author" content="Nverba">
+
+  <script src="./node_modules/systemjs/dist/system.js"></script>
+  <script>
+    SystemJS.config({
+      map: {
+        'plugin-babel': './node_modules/systemjs-plugin-babel/plugin-babel.js',
+        'systemjs-babel-build': './node_modules/systemjs-plugin-babel/systemjs-babel-browser.js'
+      },
+      transpiler: 'plugin-babel'
+    });
+    SystemJS.import('./main.js');
+  </script>
+
+  <style>
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    #reflow {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: #eee;
+    }
+  </style>  
+
+</head>
+
+<body>
+
+    <svg id="reflow"></svg>
+
+</body>
+</html>

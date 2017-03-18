@@ -1,0 +1,20 @@
+{
+  "name": "systemjs",
+  "version": "1.0.0",
+  "description": "SystemJS base-app",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --server './' --no-open --files './**/*.*'"
+  },
+  "author": "nverba <distantstate@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/nverba/reflow#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "systemjs": "^0.20.9",
+    "systemjs-plugin-babel": "0.0.21"
+  },
+  "dependencies": {
+    "snapsvg": "^0.5.1"
+  }
+}
