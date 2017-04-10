@@ -1,0 +1,1 @@
+export const applyMiddleware = (actionFn, middlewares) => middlewares.reverse().reduce((fn, value) => value(fn));

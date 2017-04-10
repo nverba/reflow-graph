@@ -4,17 +4,21 @@
   "description": "SystemJS base-app",
   "main": "index.html",
   "scripts": {
-    "start": "browser-sync start --server './' --no-open --files './**/*.*'"
+    "start": "browser-sync start --server './' --no-open --files './**/*.*'",
+    "es": "babel reflow/es/export-reflow.js --out-file libs/reflow/.js"
   },
   "author": "nverba <distantstate@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/nverba/reflow#readme",
   "devDependencies": {
+    "babel-cli": "^6.24.0",
     "browser-sync": "^2.18.8",
     "systemjs": "^0.20.9",
     "systemjs-plugin-babel": "0.0.21"
   },
   "dependencies": {
-    "snapsvg": "^0.5.1"
+    "snapsvg": "^0.5.1",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
   }
 }
